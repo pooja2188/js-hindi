@@ -7,4 +7,5 @@ console.log(accountId)
 accountEmail="pk123@gmail.com"
 accountPassword="1232"
 accountCity="Jalandhar"
-console.table([accountEmail,accountPassword,accountCity])
+let accountState
+console.table([accountEmail,accountPassword,accountCity,accountState])
