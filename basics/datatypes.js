@@ -1,4 +1,5 @@
 "use strict";
+
 //alert("Hello")  //Error :as we are using nodejs ,not browser
 
 // console.log(typeof("Pooja"))
@@ -50,22 +51,44 @@ undefined->Nan
 // console.log(id==anotherId)
 
 //arrays
-const heroes=["Shaktiman","Naagraj","Doga"]
+// const heroes=["Shaktiman","Naagraj","Doga"]
 
-//object
-let myObj={
-    name:"Pooja",
-    age:20
+// //object
+// let myObj={
+//     name:"Pooja",
+//     age:20
+// }
+// console.log(myObj)
+// console.log(heroes)
+
+// //functions in javascript
+// const myFun=function(){
+//     console.log("Hello World!");
+// }
+// myFun()
+
+// console.log(typeof(heroes))
+// console.log(typeof(myObj))
+// console.log(typeof(myFun))
+
+
+/*
+primitive datatpes use stack and when we assign one datavariables value to another data variable 
+then copy passes and change will not be visible in the original data vaiable
+
+But when we talk about non primitive data variables where data is stored in the heap and when we assign 
+values from one var to another var then reference is passes and changes will be visible in the original var also*/
+let Name="Pooja Kudal"
+let anotherName=Name
+anotherName="Pooja Choudhary"
+console.log(Name)
+console.log(anotherName)
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"userAybl"
 }
-console.log(myObj)
-console.log(heroes)
-
-//functions in javascript
-const myFun=function(){
-    console.log("Hello World!");
-}
-myFun()
-
-console.log(typeof(heroes))
-console.log(typeof(myObj))
-console.log(typeof(myFun))
+let userTwo=userOne
+userTwo.email="usertwo@gmail.com"
+console.log(userOne)
+console.log(userTwo)
